@@ -108,6 +108,24 @@ properties:
         source: winget
 
     - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: install-gcc-gpp
+      directives:
+        description: Install GCC and G++
+        allowPrereleases: false
+      settings:
+        id: TDM-GCC.TDM-GCC
+        source: winget
+
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: install-gdb
+      directives:
+        description: Install GDB
+        allowPrereleases: false
+      settings:
+        id: GNU.GDB
+        source: winget
+
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
       id: install-notepad-plus-plus
       directives:
         description: Install Notepad++
@@ -126,19 +144,28 @@ properties:
         source: winget
 
     - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: install-firefox
+      directives:
+        description: Install Firefox
+        allowPrereleases: false
+      settings:
+        id: Mozilla.Firefox
+        source: winget
+
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: install-enpass
+      directives:
+        description: Install Enpass
+        allowPrereleases: false
+      settings:
+        id: Enpass.Enpass
+        source: winget
+
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
       id: install-vlc
       directives:
         description: Install VLC media player
         allowPrereleases: false
       settings:
         id: VideoLAN.VLC
-        source: winget
-
-    - resource: Microsoft.WinGet.DSC/WinGetPackage
-      id: install-mingw
-      directives:
-        description: Install MinGW
-        allowPrereleases: false
-      settings:
-        id: Mingw-w64.Mingw-w64
         source: winget
