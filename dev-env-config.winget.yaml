@@ -14,7 +14,6 @@ properties:
       settings:
         id: Microsoft.PowerShell
         source: winget
-        version: "7.4.7"
 
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       id: install-git
@@ -40,9 +39,8 @@ properties:
         description: Install the .NET SDK
         allowPrereleases: false
       settings:
-        id: Microsoft.DotNet.SDK.8
+        id: Microsoft.DotNet.SDK.10
         source: winget
-        version: "8.0.100"
 
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       id: install-vcpp-redistributable
