@@ -185,3 +185,21 @@ properties:
       settings:
         id: VideoLAN.VLC
         source: winget
+    
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: install-libreoffice
+      directives:
+        description: Install LibreOffice
+        allowPrereleases: false
+      settings:
+        id: TheDocumentFoundation.LibreOffice
+        source: winget
+    
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: install-dropbox
+      directives:
+        description: Install Dropbox
+        allowPrereleases: false
+      settings:
+        id: Dropbox.Dropbox
+        source: winget
