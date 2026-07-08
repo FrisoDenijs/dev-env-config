@@ -18,6 +18,22 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command "$configPath = Join-Path 
 
 This pulls the Winget configuration directly from GitHub and applies it without requiring you to clone or manually download the file.
 
+### One-step setup script
+
+A Windows batch script is included to automate the full setup flow on a fresh Windows machine:
+
+```cmd
+setup-dev-env.cmd
+```
+
+Run it from an elevated Command Prompt. The script will:
+
+- download the Winget configuration file
+- apply the Winget configuration
+- install the recommended VS Code extensions
+- open Firefox pages for Enpass and uBlock Origin installation
+- use nvm to install and select the latest LTS Node.js release
+
 The configuration installs the following in a dependency-safe order:
 
 - PowerShell
