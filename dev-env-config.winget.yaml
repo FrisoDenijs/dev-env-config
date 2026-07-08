@@ -115,3 +115,30 @@ properties:
       settings:
         id: Notepad++.Notepad++
         source: winget
+
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: install-steam
+      directives:
+        description: Install Steam
+        allowPrereleases: false
+      settings:
+        id: Valve.Steam
+        source: winget
+
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: install-vlc
+      directives:
+        description: Install VLC media player
+        allowPrereleases: false
+      settings:
+        id: VideoLAN.VLC
+        source: winget
+
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: install-mingw
+      directives:
+        description: Install MinGW
+        allowPrereleases: false
+      settings:
+        id: Mingw-w64.Mingw-w64
+        source: winget
